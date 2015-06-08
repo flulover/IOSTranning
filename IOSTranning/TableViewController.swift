@@ -26,7 +26,11 @@ class TableViewController: UITableViewController {
     func initData(){
         let jsonParser:JSONParser = JSONParser()
         let jsonData = jsonParser.loadJSONFile()
-        println(jsonData["title"])
+        self.dataModel.title = jsonData["title"].string!
+        
+        for (key, itemData) in jsonData["rows"]{
+            self.dataModel.items.addObject(Item(title:itemData["title"].stringValue, description:itemData["description"].stringValue, imageHref:itemData["imageHref"].stringValue))
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,24 +43,32 @@ class TableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return self.dataModel.items.count
     }
 
-    /*
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ListPrototypeCell", forIndexPath: indexPath) as! ItemTableViewCell;
 
-        // Configure the cell...
-
-        return cell
+        
+        var item: Item = self.dataModel.items.objectAtIndex(indexPath.row) as! Item;
+        cell.titleLabel.text = item.title
+        cell.descriptionLabel.text = item.description
+        
+//        var url = NSURL(fileURLWithPath: item.imageHref)
+//        var data = NSData(contentsOfURL : url!)
+//        var image = UIImage(data : data!)
+//        cell.imageComponent.image = image
+        
+        return cell;
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
