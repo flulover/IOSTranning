@@ -62,10 +62,14 @@ class TableViewController: UITableViewController {
         cell.descriptionLabel.text = item.itemDescription
 
 
-//        var url = NSURL(fileURLWithPath: item.imageHref)
-//        var data = NSData(contentsOfURL : url!)
-//        var image = UIImage(data : data!)
-//        cell.imageComponent.image = image
+        if (item.imageHref != ""){
+            var url = NSURL(string: item.imageHref)
+            var data = NSData(contentsOfURL : url!)
+            if (data != nil){
+                var image = UIImage(data : data!)
+                cell.imageComponent.image = image
+            }
+        }
         
         return cell;
     }

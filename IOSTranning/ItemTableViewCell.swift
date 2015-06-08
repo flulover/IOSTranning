@@ -15,6 +15,8 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UITextView!
     
     
+    @IBOutlet weak var imageComponent: UIImageView!
+    
 //    @IBOutlet weak var imageComponent: UIImageView!
     
     override func awakeFromNib() {

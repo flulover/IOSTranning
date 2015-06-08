@@ -15,23 +15,35 @@
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" rowHeight="162" id="PmN-Dy-4rS" customClass="ItemTableViewCell" customModule="IOSTranning" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PmN-Dy-4rS" id="6Si-3b-2Mz">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="PmN-Dy-4rS" id="6Si-3b-2Mz">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-Nk-agC">
-                                            <rect key="frame" x="88" y="85" width="300" height="76"/>
+                                            <rect key="frame" x="8" y="77" width="300" height="76"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="77" width="166" height="76"/>
+                                            </variation>
                                             <connections>
                                                 <outlet property="delegate" destination="OCJ-s1-Xty" id="fm6-Dw-L7u"/>
                                             </connections>
                                         </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-mW-Fxh">
+                                            <rect key="frame" x="316" y="76" width="276" height="77"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="182" y="77" width="210" height="76.5"/>
+                                            </variation>
+                                        </imageView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-H5-SRc">
-                                            <rect key="frame" x="58" y="20" width="387" height="57"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="8" width="384" height="66"/>
+                                            </variation>
                                             <connections>
                                                 <outlet property="delegate" destination="OCJ-s1-Xty" id="TrW-kz-a6R"/>
                                             </connections>
@@ -40,6 +52,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="OFT-Nk-agC" id="41d-gW-YaC"/>
+                                    <outlet property="imageComponent" destination="NBw-mW-Fxh" id="1i2-B6-i0P"/>
                                     <outlet property="titleLabel" destination="q2q-H5-SRc" id="WIJ-CV-OOM"/>
                                 </connections>
                             </tableViewCell>
@@ -52,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FF-XG-zRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="359"/>
+            <point key="canvasLocation" x="327" y="359"/>
         </scene>
     </scenes>
 </document>
