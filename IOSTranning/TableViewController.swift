@@ -59,6 +59,7 @@ class TableViewController: UITableViewController {
 
         
         var item: Item = self.dataModel.items.objectAtIndex(indexPath.row) as! Item;
+        cell.titleLabel.font = UIFont.boldSystemFontOfSize(24)
         cell.titleLabel.text = item.title
         cell.descriptionLabel.text = item.itemDescription
 

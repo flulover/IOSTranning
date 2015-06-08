@@ -24,22 +24,17 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="54" width="201" height="99"/>
+                                                <rect key="frame" x="8" y="54" width="217" height="99"/>
                                             </variation>
                                             <connections>
                                                 <outlet property="delegate" destination="OCJ-s1-Xty" id="fm6-Dw-L7u"/>
                                             </connections>
                                         </textView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-mW-Fxh">
-                                            <rect key="frame" x="316" y="76" width="276" height="77"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="217" y="54" width="167" height="99.5"/>
-                                            </variation>
-                                        </imageView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-H5-SRc">
                                             <rect key="frame" x="8" y="8" width="584" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.1052749303877718" green="0.37612459573888679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
                                                 <rect key="frame" x="8" y="8" width="376" height="38"/>
@@ -48,6 +43,12 @@
                                                 <outlet property="delegate" destination="OCJ-s1-Xty" id="TrW-kz-a6R"/>
                                             </connections>
                                         </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-mW-Fxh">
+                                            <rect key="frame" x="316" y="76" width="276" height="77"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="241" y="53" width="112" height="99.5"/>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
