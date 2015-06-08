@@ -9,11 +9,6 @@
 import UIKit
 
 class DataModel: NSObject {
-    var title:String
-    var items:NSMutableArray
-    
-    init(title:String){
-        self.title = title
-        items = NSMutableArray()
-    }
+    var title:String = ""
+    var items:NSMutableArray = NSMutableArray()
 }

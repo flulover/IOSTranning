@@ -10,14 +10,23 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var dataModel = DataModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func initData(){
+        let jsonParser:JSONParser = JSONParser()
+        let jsonData = jsonParser.loadJSONFile()
+        println(jsonData["title"])
     }
 
     override func didReceiveMemoryWarning() {
