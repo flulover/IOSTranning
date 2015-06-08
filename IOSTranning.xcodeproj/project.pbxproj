@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492617F31B25F34B00C11101 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492617F21B25F34B00C11101 /* TableViewController.swift */; };
 		495A3C111B25977C00CB7364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A3C101B25977C00CB7364 /* AppDelegate.swift */; };
 		495A3C131B25977C00CB7364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A3C121B25977C00CB7364 /* ViewController.swift */; };
 		495A3C161B25977C00CB7364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495A3C141B25977C00CB7364 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		492617F21B25F34B00C11101 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		495A3C0B1B25977C00CB7364 /* IOSTranning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTranning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495A3C0F1B25977C00CB7364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495A3C101B25977C00CB7364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				495A3C101B25977C00CB7364 /* AppDelegate.swift */,
 				495A3C121B25977C00CB7364 /* ViewController.swift */,
 				495A3C141B25977C00CB7364 /* Main.storyboard */,
+				492617F21B25F34B00C11101 /* TableViewController.swift */,
 				495A3C171B25977C00CB7364 /* Images.xcassets */,
 				495A3C191B25977C00CB7364 /* LaunchScreen.xib */,
 				495A3C0E1B25977C00CB7364 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495A3C131B25977C00CB7364 /* ViewController.swift in Sources */,
+				492617F31B25F34B00C11101 /* TableViewController.swift in Sources */,
 				495A3C111B25977C00CB7364 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				495A3C2C1B25977C00CB7364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495A3C2D1B25977C00CB7364 /* Build configuration list for PBXNativeTarget "IOSTranningTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				495A3C2F1B25977C00CB7364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
