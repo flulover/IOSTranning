@@ -59,8 +59,9 @@ class TableViewController: UITableViewController {
         
         var item: Item = self.dataModel.items.objectAtIndex(indexPath.row) as! Item;
         cell.titleLabel.text = item.title
-        cell.descriptionLabel.text = item.description
-        
+        cell.descriptionLabel.text = item.itemDescription
+
+
 //        var url = NSURL(fileURLWithPath: item.imageHref)
 //        var data = NSData(contentsOfURL : url!)
 //        var image = UIImage(data : data!)
