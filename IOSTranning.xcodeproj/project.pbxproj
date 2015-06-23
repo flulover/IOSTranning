@@ -19,6 +19,7 @@
 		495A3C181B25977C00CB7364 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A3C171B25977C00CB7364 /* Images.xcassets */; };
 		495A3C1B1B25977C00CB7364 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495A3C191B25977C00CB7364 /* LaunchScreen.xib */; };
 		495A3C271B25977C00CB7364 /* IOSTranningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A3C261B25977C00CB7364 /* IOSTranningTests.swift */; };
+		49A8DCFA1B395C7E0013FD8A /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DCF91B395C7E0013FD8A /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		495A3C201B25977C00CB7364 /* IOSTranningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSTranningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495A3C251B25977C00CB7364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495A3C261B25977C00CB7364 /* IOSTranningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTranningTests.swift; sourceTree = "<group>"; };
+		49A8DCF91B395C7E0013FD8A /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				492618021B26032400C11101 /* ItemTableViewCell.swift */,
 				492617F21B25F34B00C11101 /* TableViewController.swift */,
+				49A8DCF91B395C7E0013FD8A /* ItemDetailViewController.swift */,
 				495A3C141B25977C00CB7364 /* Main.storyboard */,
 			);
 			name = View;
@@ -257,6 +260,7 @@
 			files = (
 				492617FD1B25F5B500C11101 /* DataModel.swift in Sources */,
 				492617FB1B25F59300C11101 /* Item.swift in Sources */,
+				49A8DCFA1B395C7E0013FD8A /* ItemDetailViewController.swift in Sources */,
 				492617FF1B25F6D400C11101 /* JSONParser.swift in Sources */,
 				492618031B26032400C11101 /* ItemTableViewCell.swift in Sources */,
 				492617F31B25F34B00C11101 /* TableViewController.swift in Sources */,

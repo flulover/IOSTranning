@@ -52,6 +52,12 @@ class TableViewController: UITableViewController {
         // Return the number of rows in the section.
         return self.dataModel.items.count
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let row = indexPath.row //2
+        let section = indexPath.section//3
+        let item = dataModel.items[row]
+    }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -75,7 +81,6 @@ class TableViewController: UITableViewController {
         
         return cell;
     }
-
 
     /*
     // Override to support conditional editing of the table view.
@@ -112,14 +117,18 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        println("prepareForSegue: %@", segue.identifier);
+        if(segue.identifier == "detailSegue")
+        {
+            
+        }
     }
-    */
 
 }
