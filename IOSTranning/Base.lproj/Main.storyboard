@@ -19,7 +19,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="PmN-Dy-4rS" id="6Si-3b-2Mz">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-Nk-agC">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-Nk-agC">
                                             <rect key="frame" x="8" y="77" width="300" height="76"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <accessibility key="accessibilityConfiguration">
@@ -48,7 +48,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-mW-Fxh">
                                             <rect key="frame" x="316" y="76" width="276" height="77"/>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-H5-SRc">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-H5-SRc">
                                             <rect key="frame" x="8" y="8" width="584" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <accessibility key="accessibilityConfiguration">
@@ -126,7 +126,7 @@
                                     <outlet property="descriptionLabel" destination="OFT-Nk-agC" id="41d-gW-YaC"/>
                                     <outlet property="imageComponent" destination="NBw-mW-Fxh" id="1i2-B6-i0P"/>
                                     <outlet property="titleLabel" destination="q2q-H5-SRc" id="WIJ-CV-OOM"/>
-                                    <segue destination="cdt-L9-ZvG" kind="show" identifier="detailSegue" id="c2y-xU-dPb"/>
+                                    <segue destination="cdt-L9-ZvG" kind="show" identifier="detailSegue" id="QQs-KW-T85"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -150,6 +150,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5or-2d-rgf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aFR-ff-yYn" customClass="Details">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-WJ-63B">

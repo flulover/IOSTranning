@@ -126,13 +126,10 @@ class TableViewController: UITableViewController {
         
         if(segue.identifier == "detailSegue")
         {
-            let itemDetailViewController = segue.destinationViewController as! ItemDetailViewController
             let item = sender as! ItemTableViewCell
+            let itemDetailViewController = segue.destinationViewController as! ItemDetailViewController
             
-            let image = item.imageComponent.image!
-            itemDetailViewController.itemImage.image = image
-            itemDetailViewController.itemTitle.text = item.titleLabel.text
-            itemDetailViewController.itemDescription.text = item.descriptionLabel.text
+            itemDetailViewController.itemTableViewCell = item
         }
     }
 

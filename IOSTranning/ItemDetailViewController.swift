@@ -13,4 +13,12 @@ class ItemDetailViewController: UIViewController {
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemTitle: UITextView!
     @IBOutlet weak var itemDescription: UITextView!
+    
+    var itemTableViewCell:ItemTableViewCell!
+    
+    override func viewDidLoad() {
+        itemImage.image = itemTableViewCell.imageComponent.image
+        itemTitle.text = itemTableViewCell.titleLabel.text
+        itemDescription.text = itemTableViewCell.descriptionLabel.text
+    }
 }
