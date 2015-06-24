@@ -52,13 +52,6 @@ class TableViewController: UITableViewController {
         // Return the number of rows in the section.
         return self.dataModel.items.count
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let row = indexPath.row //2
-        let section = indexPath.section//3
-        let item = dataModel.items[row] as! Item
-    }
-
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListPrototypeCell", forIndexPath: indexPath) as! ItemTableViewCell;
