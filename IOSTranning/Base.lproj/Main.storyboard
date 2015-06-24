@@ -126,6 +126,7 @@
                                     <outlet property="descriptionLabel" destination="OFT-Nk-agC" id="41d-gW-YaC"/>
                                     <outlet property="imageComponent" destination="NBw-mW-Fxh" id="1i2-B6-i0P"/>
                                     <outlet property="titleLabel" destination="q2q-H5-SRc" id="WIJ-CV-OOM"/>
+                                    <segue destination="cdt-L9-ZvG" kind="show" identifier="detailSegue" id="c2y-xU-dPb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -135,9 +136,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="uNJ-Ub-drH"/>
-                    <connections>
-                        <segue destination="cdt-L9-ZvG" kind="show" identifier="detailSegue" id="onw-nK-9Fs"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FF-XG-zRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

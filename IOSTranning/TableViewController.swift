@@ -56,7 +56,7 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let row = indexPath.row //2
         let section = indexPath.section//3
-        let item = dataModel.items[row]
+        let item = dataModel.items[row] as! Item
     }
 
 
@@ -124,10 +124,15 @@ class TableViewController: UITableViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         
-        println("prepareForSegue: %@", segue.identifier);
         if(segue.identifier == "detailSegue")
         {
+            let itemDetailViewController = segue.destinationViewController as! ItemDetailViewController
+            let item = sender as! ItemTableViewCell
             
+            let image = item.imageComponent.image!
+            itemDetailViewController.itemImage.image = image
+            itemDetailViewController.itemTitle.text = item.titleLabel.text
+            itemDetailViewController.itemDescription.text = item.descriptionLabel.text
         }
     }
 
