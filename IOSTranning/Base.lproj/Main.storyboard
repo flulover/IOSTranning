@@ -29,7 +29,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="99" id="BFw-5s-pOP"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -51,15 +51,11 @@
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-H5-SRc">
                                             <rect key="frame" x="8" y="8" width="584" height="60"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <accessibility key="accessibilityConfiguration">
-                                                <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
-                                                <bool key="isElement" value="NO"/>
-                                            </accessibility>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="38" id="hSC-Fg-2gk"/>
                                             </constraints>
                                             <color key="textColor" red="0.1052749303877718" green="0.37612459573888679" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -155,37 +151,94 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-WJ-63B">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="72" width="127" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="MXM-Ma-GS9"/>
+                                    <constraint firstAttribute="width" constant="127" id="pOh-0k-zeM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MXM-Ma-GS9"/>
+                                        <exclude reference="pOh-0k-zeM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="MXM-Ma-GS9"/>
+                                        <include reference="pOh-0k-zeM"/>
+                                    </mask>
                                 </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTC-Bx-VJr">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="vgR-ce-VRE"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="264" width="368" height="316"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vgR-ce-VRE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vgR-ce-VRE"/>
+                                    </mask>
                                 </variation>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGo-ta-FV1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EGo-ta-FV1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="3PA-DL-u1v"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="78" y="189" width="245" height="53"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3PA-DL-u1v"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3PA-DL-u1v"/>
+                                    </mask>
                                 </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZTC-Bx-VJr" firstAttribute="trailing" secondItem="aFR-ff-yYn" secondAttribute="trailingMargin" id="0Xu-TQ-VEM"/>
+                            <constraint firstItem="EGo-ta-FV1" firstAttribute="leading" secondItem="aFR-ff-yYn" secondAttribute="leadingMargin" constant="62" id="Gwm-G1-wb1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EGo-ta-FV1" secondAttribute="trailing" constant="61" id="M5V-P2-zQM"/>
+                            <constraint firstAttribute="centerX" secondItem="ZTC-Bx-VJr" secondAttribute="centerX" id="MwI-MW-iod"/>
+                            <constraint firstItem="PeH-WJ-63B" firstAttribute="top" secondItem="1Fa-nY-qqm" secondAttribute="bottom" constant="8" id="NPc-kT-tB3"/>
+                            <constraint firstAttribute="centerX" secondItem="PeH-WJ-63B" secondAttribute="centerX" id="Udq-2n-rmi"/>
+                            <constraint firstAttribute="centerX" secondItem="EGo-ta-FV1" secondAttribute="centerX" id="VEn-es-yDO"/>
+                            <constraint firstItem="EGo-ta-FV1" firstAttribute="top" secondItem="PeH-WJ-63B" secondAttribute="bottom" constant="8" id="VQP-Iy-jwu"/>
+                            <constraint firstItem="ZTC-Bx-VJr" firstAttribute="top" secondItem="EGo-ta-FV1" secondAttribute="bottom" constant="22" id="eW6-VO-9Ee"/>
+                            <constraint firstItem="ZTC-Bx-VJr" firstAttribute="leading" secondItem="aFR-ff-yYn" secondAttribute="leadingMargin" id="v8U-OV-NGu"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="PeH-WJ-63B"/>
                                 <exclude reference="ZTC-Bx-VJr"/>
                                 <exclude reference="EGo-ta-FV1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NPc-kT-tB3"/>
+                                <exclude reference="Udq-2n-rmi"/>
+                                <exclude reference="Gwm-G1-wb1"/>
+                                <exclude reference="M5V-P2-zQM"/>
+                                <exclude reference="VEn-es-yDO"/>
+                                <exclude reference="VQP-Iy-jwu"/>
+                                <exclude reference="0Xu-TQ-VEM"/>
+                                <exclude reference="MwI-MW-iod"/>
+                                <exclude reference="eW6-VO-9Ee"/>
+                                <exclude reference="v8U-OV-NGu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -193,6 +246,18 @@
                                 <include reference="PeH-WJ-63B"/>
                                 <include reference="ZTC-Bx-VJr"/>
                                 <include reference="EGo-ta-FV1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NPc-kT-tB3"/>
+                                <include reference="Udq-2n-rmi"/>
+                                <include reference="Gwm-G1-wb1"/>
+                                <include reference="M5V-P2-zQM"/>
+                                <include reference="VEn-es-yDO"/>
+                                <include reference="VQP-Iy-jwu"/>
+                                <include reference="0Xu-TQ-VEM"/>
+                                <include reference="MwI-MW-iod"/>
+                                <include reference="eW6-VO-9Ee"/>
+                                <include reference="v8U-OV-NGu"/>
                             </mask>
                         </variation>
                     </view>
